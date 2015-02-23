@@ -1,2 +1,0 @@
-# Wordperss-MyCred-WebGate
-a
