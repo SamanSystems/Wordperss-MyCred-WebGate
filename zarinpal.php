@@ -2,13 +2,12 @@
 /**
 * Plugin Name: درگاه زرین پال myCRED
 * Description: این افزونه درگاه زرین پال را به افزونه myCRED اضافه میکند .
-* Version: 1.0.0
-* Author: حنان ابراهیمی ستوده
-* Author URI: http://hannanstd.ir
-* Tested up to: 4.1
+* Version: 2.0.0
+* Author: زرین پال , حنان ابراهیمی ستوده
+* Tested up to: 5.6
 */
-add_action('mycred_buycred_load_gateways', 'mycred_zarinpal_loader');
-function mycred_zarinpal_loader(){
+add_action('mycred_buycred_load_gateways', 'mycred_zarinpal_loader2');
+function mycred_zarinpal_loader2(){
 	require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
 	if ( is_plugin_active('mycred/mycred.php') && defined( 'myCRED_VERSION' ) && class_exists( 'myCRED_Payment_Gateway' ) ) {
 	
