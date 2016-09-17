@@ -253,7 +253,7 @@ function mycred_zarinpal_loader(){
 						// Get Pending Payment
 						$pending_post_id = sanitize_key( $_REQUEST['payment-id'] );
 						$pending_payment = $this->get_pending_payment( $pending_post_id );
-						$cost = $pending_payment['cost'];
+						$cost = $pending_payment->cost;
 						if ( $pending_payment !== false ) {
 					
 							$MerchantID = $this->prefs['zarinpal_merchant'];  
